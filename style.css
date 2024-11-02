@@ -1,104 +1,141 @@
 
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5dc; /* Cor de fundo bege */
-    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1e22; /* Fundo mais escuro e sofisticado */
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+}
+
+.tela-principal {
+    padding: 50px;
+    background-color: #2a2d34; /* Cor mais escura e elegante */
+    border-radius: 8px;
+    margin: 20px;
 }
 
 .nome {
-    font-size: 3em; /* Tamanho do nome */
-    margin-bottom: 10px; /* Espaço abaixo do nome */
+    font-size: 3em;
+    color: #ffdd59; /* Amarelo suave para o nome */
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .descricao {
-    margin-bottom: 40px; /* Adiciona espaço abaixo da descrição */
+    font-size: 1.1em;
+    margin: 20px 0 40px 0;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: auto;
 }
 
 h2 {
-    margin-top: 40px; /* Espaço acima do título de competências */
+    font-size: 2em;
+    color: #ffdd59;
+    margin-top: 40px;
+    text-transform: uppercase;
 }
 
 .competencias {
-    list-style: none; /* Remove marcadores da lista */
-    padding: 0; /* Remove padding */
-    text-align: center; /* Centraliza a lista */
-    margin-bottom: 40px; /* Espaço abaixo das competências */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Caixas menores */
+    gap: 10px;
+    padding: 0 20px;
 }
 
 .competencias p {
-    margin: 10px 0; /* Espaço entre as competências */
+    background-color: #3a3d46; /* Fundo mais escuro para as caixas */
+    padding: 8px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 0.9em; /* Reduzindo o tamanho da fonte */
 }
 
 .botoes {
-    margin: 20px 0; /* Espaço acima e abaixo dos botões */
+    margin: 20px 0;
 }
 
 .botoes a {
-    display: inline-block; /* Para que os links apareçam em linha */
-    margin: 0 10px; /* Espaço entre os botões */
-    padding: 10px 15px;
-    background-color: #007bff; /* Cor do fundo do botão */
-    color: white; /* Cor do texto do botão */
-    text-decoration: none; /* Remove o sublinhado do link */
-    border-radius: 5px; /* Bordas arredondadas */
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4ca1af;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 .botoes a:hover {
-    background-color: #0056b3; /* Cor do fundo ao passar o mouse */
+    background-color: #ffdd59;
+    color: #2c3e50;
 }
 
 .botao-projetos {
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #28a745; /* Cor do fundo do botão de projetos */
-    color: white;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #34495e;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    font-size: 1em;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .botao-projetos:hover {
-    background-color: #218838; /* Cor do fundo ao passar o mouse */
+    background-color: #ffdd59;
+    color: #2c3e50;
 }
 
 .ultima-tela {
-    margin-top: 40px; /* Espaço acima da última tela */
+    margin-top: 50px;
+    padding: 50px;
 }
 
 .projeto {
-    background-color: white; /* Fundo branco das caixas de projeto */
-    margin: 15px auto; /* Espaço entre os projetos */
-    padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de flutuação */
-    width: 80%; /* Largura das caixas de projetos */
+    background-color: #34495e;
+    color: #ffffff;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    text-align: left;
 }
 
 .projeto h3 {
     margin: 0;
+    color: #ffdd59;
+}
+
+.projeto p {
+    margin: 15px 0;
+    line-height: 1.5;
 }
 
 .projeto a {
     display: inline-block;
-    margin-top: 10px; /* Espaço acima do link do projeto */
-    padding: 10px;
-    background-color: #007bff; /* Cor do fundo do link do projeto */
-    color: black; /* Texto preto */
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4ca1af;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
 
 .projeto a:hover {
-    background-color: #0056b3; /* Cor do fundo ao passar o mouse */
+    background-color: #ffdd59;
+    color: #2c3e50;
 }
 
-/* Ajuste para o tamanho da imagem */
 .imagem {
-    max-width: 200px; /* Largura máxima da imagem */
-    max-height: 200px; /* Altura máxima da imagem */
-    border-radius: 10px; /* Bordas arredondadas da imagem */
-    margin: 20px auto; /* Centraliza a imagem horizontalmente */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 221, 89, 0.8);
+    margin-bottom: 20px;
 }
